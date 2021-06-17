@@ -1,0 +1,44 @@
+.navbar {
+    height: 70px;
+    background-color: $body-bg;
+    box-shadow: 4px 10px 31px 0 rgba(112, 144, 176, 0.25);
+    @include breakpoint(mid){
+        height: auto;
+    }
+    .navbar-brand {
+        margin-#{$right}: 40px;
+        img {
+            width: 100px;
+        }
+    }
+    .navbar-nav {
+        margin: auto !important;
+        .nav-link {
+            font-size: $font-size * 1.2px;
+            padding: 5px 0;
+            margin: 0 20px;
+            color: $fourth-txt;
+        }
+        .active-link {
+            font-weight: 900;
+            border-bottom: solid 3px;
+        }
+    }
+    .switchLang {
+        background-color: $prim-bg;
+        font-size: $font-size * 1.2px;
+        border-radius: 25px;
+        padding: 1px 20px 6px;
+    }
+    .dropdown-menu {
+        border-radius: 15px;
+        box-shadow: 4px 10px 31px 0 rgba(112, 144, 176, 0.25);
+        .dropdown-item {
+            border-bottom: solid 1px rgba(0, 0, 0, 0.12);
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+

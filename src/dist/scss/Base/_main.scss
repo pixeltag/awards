@@ -1,0 +1,33 @@
+﻿html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $body-bg;
+  font-family: $font-fm-reg;
+  color: $third-txt;
+  font-size: $font-size * 1px;
+  direction: $dir;
+  text-align: $left;
+  padding-top: 70px;
+}
+
+h2 {
+  font-size: $font-size * 2px;
+  font-family: $font-fm-med;
+}
+
+h3 {
+  font-size: $font-size * 1.285714285714286px;
+  font-family: $font-fm-bold;
+}
+
+h4 {
+  font-size: $font-size * 1.285714285714286px;
+  font-family: $font-fm-bold;
+}
+
+h5 {
+  font-size: $font-size * 1px;
+  font-family: $font-fm-bold;
+}

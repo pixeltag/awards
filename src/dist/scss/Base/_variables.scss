@@ -1,0 +1,35 @@
+// ==============================================================
+// ## Base
+
+//== Background:
+$body-bg : #fff;
+$prim-bg : #40c1ac;
+$second-bg : #002554;
+
+
+//== Text:
+$body-txt : #fff;
+$prim-txt : #1e1d1d;
+$second-txt : #0c0f56;
+$third-txt : #504b4b;
+$fourth-txt : #45413a;
+
+$font-size : 14;
+
+
+//== BreakPoints:
+
+// Extra small screen / phone
+$screen-xs:                  420px !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+
+// Large screen / desktop
+$screen-lg:                  1200px !default;
+
+// Large screen / wide 
+$screen-wd:					1400px !default;

@@ -1,0 +1,134 @@
+.about {
+    .about_1, .about_2, .about_3 {
+        height: 450px;
+        @include breakpoint(x-small){
+            height: 555px;
+        }
+        overflow: hidden;
+        img {
+            
+        }
+        h2 {
+            padding: 50px 0 15px;
+            &:after {
+                content: "";
+                height: 3px;
+                width: 25%;
+                display: block;
+                margin-top: 7px;
+            }
+        }
+        h3 {
+            padding: 0;
+        }
+        p {
+            padding: 0;
+            margin-top: 20px;
+        }
+    }
+    .about_1, .about_3 {
+        padding: 30px 0;
+        height: 450px;
+        @include breakpoint(mid){
+            height: auto;
+            padding-bottom: 25px;
+        }
+        img {
+            width: 70%;
+            margin: auto;
+            display: block;
+            margin-top: 8px;
+        }
+        h2 {
+            color: $second-txt;
+            padding: 40px 0px 15px;
+            &:after {
+                background-color: $prim-bg;
+            }
+        }
+        h3 {
+
+        }
+        h4 {
+            padding: 0;
+        }
+        p {
+            
+        }
+    }
+    .about_1 {
+        .col {
+            &:nth-child(2) {
+                
+            }
+        } 
+        img {
+            float: $left;
+            @include breakpoint(small){
+                float: none;
+            }
+        }
+        h2 {
+
+        }
+        h3 {
+
+        }
+        p {
+
+        }
+    }
+    .about_2 {
+        background-color: $prim-bg;
+        position: relative;
+        .col {
+            &:nth-child(1) {
+                
+            }
+        }
+        img {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            #{$right}: 0;
+            top: 0;
+            @include breakpoint(mid){
+                display: none;
+            }
+        }
+        h2 {
+            color: $body-txt;
+            &:after {
+                background-color: $second-bg;
+            }
+        }
+        p {
+            color: $body-bg;
+        }
+    }
+    .about_3 {
+        .col {
+            &:nth-child(1) {
+                
+            }
+        } 
+        img {
+            float: $right;
+            @include breakpoint(small){
+                float: none;
+            }
+        }
+        h2 {
+            
+        }
+        h3 {
+
+        }
+        h4 {
+
+        }
+        p {
+            
+        }
+    }
+}

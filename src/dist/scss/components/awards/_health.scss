@@ -1,0 +1,315 @@
+.awardsTabs {
+    padding-bottom: 50px;
+    .awardsTabsHeader {
+        background: rgb(156,221,210);
+        background: -moz-linear-gradient(-45deg,  rgba(156,221,210,1) 0%, rgba(125,171,216,1) 100%);
+        background: -webkit-linear-gradient(-45deg,  rgba(156,221,210,1) 0%,rgba(125,171,216,1) 100%);
+        background: linear-gradient(135deg,  rgba(156,221,210,1) 0%,rgba(125,171,216,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cddd2', endColorstr='#7dabd8',GradientType=1 );
+        height: 150px;
+        text-align: center;
+        font-size: 36px;
+        color: $body-txt;
+        line-height: 140px;
+        font-size: $font-size * 2.571428571428571px;
+        font-family: $font-fm-bold;
+    }  
+    .nav-tabs {
+        margin-top: 60px;
+        height: 125px;
+        box-shadow: 3px 3px 7px 3px rgba(198, 198, 198, 0.45);
+        border-radius: 105px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        .nav-link {
+            width: 20%;
+            text-align: center;
+            .tabImg {
+                margin: auto;
+                margin-top: 7px;
+                height: 50px;
+                width: 50px;
+                background-size: 100% 100%;
+            }
+            span {
+                color: $second-txt;
+                padding-top: 15px;
+                display: inline-block;
+            }
+        }
+
+        .nav-link:nth-of-type(1) {
+            .tabImg {
+                background-image: url(../../../img/trophy.svg);
+            }
+        }
+        .nav-link:nth-of-type(2) {
+            .tabImg {
+                background-image: url(../../../img/headset.svg);
+            }
+        }
+        .nav-link:nth-of-type(3) {
+            .tabImg {
+                background-image: url(../../../img/Group.svg);
+            }
+        }
+        .nav-link:nth-of-type(4) {
+            .tabImg {
+                background-image: url(../../../img/technology.svg);
+            }
+        }
+        .nav-link:nth-of-type(5) {
+            .tabImg {
+                background-image: url(../../../img/healthInsurance.svg);
+            }
+        }
+        .active {
+            background-color: $second-bg;
+            .tabImg {
+
+            }
+            span {
+                color: $body-txt;
+            }
+        }
+        .nav-link:nth-of-type(1).active {
+            .tabImg {
+                background-image: url(../../../img/trophyW.svg);
+            }
+        }
+        .nav-link:nth-of-type(2).active {
+            .tabImg {
+                background-image: url(../../../img/headsetW.svg);
+            }
+        }
+        .nav-link:nth-of-type(3).active {
+            .tabImg {
+                background-image: url(../../../img/GroupW.svg);
+            }
+        }
+        .nav-link:nth-of-type(4).active {
+            .tabImg {
+                background-image: url(../../../img/technologyW.svg);
+            }
+        }
+        .nav-link:nth-of-type(5).active {
+            .tabImg {
+                background-image: url(../../../img/healthInsuranceW.svg);
+            }
+        }
+    }
+
+    .tab-content  {
+        > .tabParent {
+            > .accordion {
+                > .card {
+                    border: none;
+                    padding: 5px 15px;
+                    > .card-header {
+                        border-radius: 20px;
+                        box-shadow: 3px 3px 7px 3px rgba(198, 198, 198, 0.45); 
+                        background-color: $body-bg;
+                        margin-top: 40px;
+                        margin-bottom: 10px;
+                        .icon {
+                            height: 70px;
+                        }
+                        .arr {
+                            float: $right;
+                            height: 30px;
+                            margin-top: 18px;
+                            transition: all 0.2s linear;
+                        }
+                        span {
+                            margin-#{$left}: 25px;
+                        }
+                        .activeAcc {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    > .collapseHolder {
+                        border-radius: 20px;
+                        box-shadow: 3px 3px 7px 3px rgba(198, 198, 198, 0.45); 
+                        background-color: $body-bg;
+                        overflow: hidden;
+                        margin-top: 50px;
+                        .accordion {
+                            padding: 20px;
+                            .card {
+                                border: none;
+                                border-bottom: solid 1px #cacaca;
+                                .card-header {
+                                    background-color: $body-bg;
+                                    border-bottom: none;
+                                    line-height: 30px;
+                                    span {
+                                        color: $second-txt;
+                                    }
+                                    .plus {
+                                        transition: all 0.2s linear;
+                                        float: $right;
+                                        height: 30px;
+                                    }
+                                    .activeAccChild {
+                                        transform: rotate(135deg);
+                                    }
+                                }
+                                .collapseHolder {
+                                    .card-body {
+                                        p {
+                                            padding: 0 20px;
+                                        }
+                                        strong {
+                                            padding: 0 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .card:last-child {
+                                border-bottom: none;
+                            }
+                            .btnHolder {
+                                text-align: center;
+                                padding: 30px 0 10px;
+                                button {
+                                    background-color: $prim-bg;
+                                    border: none;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tabChild {
+            border-radius: 20px;
+            box-shadow: 3px 3px 7px 3px rgba(198, 198, 198, 0.45); 
+            background-color: $body-bg;
+            overflow: hidden;
+            margin-top: 50px;
+        .accordion {
+            padding: 20px;
+            .card {
+                border: none;
+                border-bottom: solid 1px #cacaca;
+                .card-header {
+                    background-color: $body-bg;
+                    border-bottom: none;
+                    line-height: 30px;
+                    span {
+                        color: $second-txt;
+                    }
+                    .plus {
+                        transition: all 0.2s linear;
+                        float: $right;
+                        height: 30px;
+                    }
+                    .activeAccChild {
+                        transform: rotate(135deg);
+                    }
+                }
+                .collapseHolder {
+                    .card-body {
+                        p {
+                            padding: 0 20px;
+                        }
+                        strong {
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+            .card:last-child {
+                border-bottom: none;
+            }
+            .btnHolder {
+                text-align: center;
+                padding: 30px 0 10px;
+                button {
+                    background-color: $prim-bg;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+.customAwardsTabs {
+    .nav-tabs {
+        .nav-link {
+            width: 25%;
+        }
+
+        .nav-link:nth-of-type(1) {
+            .tabImg {
+                background-image: url(../../../img/healthInsurance.svg);
+            }
+        }
+        .nav-link:nth-of-type(2) {
+            .tabImg {
+                background-image: url(../../../img/headset.svg);
+            }
+        }
+        .nav-link:nth-of-type(3) {
+            .tabImg {
+                background-image: url(../../../img/technology.svg);
+            }
+        }
+        .nav-link:nth-of-type(4) {
+            .tabImg {
+                background-image: url(../../../img/Group.svg);
+            }
+        }
+        .nav-link:nth-of-type(5) {
+            .tabImg {
+                background-image: url(../../../img/trophy.svg);
+            }
+        }
+        .nav-link:nth-of-type(1).active {
+            .tabImg {
+                background-image: url(../../../img/healthInsuranceW.svg);
+            }
+        }
+        .nav-link:nth-of-type(2).active {
+            .tabImg {
+                background-image: url(../../../img/headsetW.svg);
+            }
+        }
+        .nav-link:nth-of-type(3).active {
+            .tabImg {
+                background-image: url(../../../img/technologyW.svg);
+            }
+        }
+        .nav-link:nth-of-type(4).active {
+            .tabImg {
+                background-image: url(../../../img/GroupW.svg);
+            }
+        }
+        .nav-link:nth-of-type(5).active {
+            .tabImg {
+                background-image: url(../../../img/trophyW.svg);
+            }
+        }
+    }
+}
+.customAwardsTabs_2 {
+    .nav-tabs {
+        justify-content: center;
+        .nav-link {
+            width: 25%;
+        }
+        .nav-link:nth-of-type(1) {
+            .tabImg {
+                background-image: url(../../../img/healthInsurance.svg);
+            }
+        }
+        .nav-link:nth-of-type(1).active {
+            .tabImg {
+                background-image: url(../../../img/healthInsuranceW.svg);
+            }
+        }
+    }
+}

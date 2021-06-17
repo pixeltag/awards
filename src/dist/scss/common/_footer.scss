@@ -1,0 +1,84 @@
+footer {
+    position: relative;
+    height: 450px;
+    padding-top: 260px;
+    overflow: hidden;
+    color: $body-txt;
+    @include breakpoint(wide){
+        height: 380px;
+        padding-top: 190px;
+    }
+    @include breakpoint(small){
+        padding-top: 170px; 
+        padding-bottom: 90px;
+        height: auto;
+    } 
+    &:before, &:after {
+        content: "";
+        height: 90%;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-image: url(../../img/vector1.svg);
+        background-size: cover;
+        background-position: bottom;
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    &:after {
+        background-image: url(../../img/vector2.svg);
+        transform: scaleY(-1);
+        height: 100%;
+        width: 110%;
+        right: -10%;
+    }
+    h4 {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    a {
+        color: $body-txt;
+        transition: all 0.2s linear;
+        display: block;
+        text-align: center;
+        &:hover {
+            color: $second-txt;
+            text-decoration: none;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        li {
+            list-style: none;
+            a {
+                color: $body-txt;
+                margin: 0px 5px;
+                transition: all 0.2s linear;
+                display: block;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .copyRight {
+        border-top: solid 1px;
+        text-align: center;
+        height: 35px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        padding-top: 7px;
+        font-size: 12px;
+    }
+}
